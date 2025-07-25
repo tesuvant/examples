@@ -31,3 +31,10 @@ spec:
             httpGet:
               path: /
               port: http
+          volumeMounts:
+            - name: persistent-storage
+              mountPath: "/mnt/azurefile"
+      volumes:
+        - name: persistent-storage
+          persistentVolumeClaim:
+            claimName: pvc-azure-file
