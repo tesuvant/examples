@@ -37,4 +37,4 @@ spec:
       volumes:
         - name: persistent-storage
           persistentVolumeClaim:
-            claimName: pvc-azure-file
+            claimName: pvc-azure-file2
